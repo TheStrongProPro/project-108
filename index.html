@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Animal sound recognition app</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <center>
+            <div class="col-xs 12 header_div text-center">
+                <h1>Which Animal it is ?</h1>
+                <p style="color: red">
+                    Note : Play different sounds of animals like barking,
+                    meowing, mooing , roar to know what is the animal
+                </p>
+            </div>
+            <div class="main_div">
+                <button
+                    class="btn btn-outline-danger"
+                    onclick="startrecognition()"
+                >
+                    Start Listening
+                </button>
+                <h3 id="label_name">Animal Name -</h3>
+                <h4 id="label_confidence">Accuracy -</h4>
+                <h4>We detected the sound Of -</h4>
+                <img id="inner_image"></img
+                    >
+            </div>
+            <div class="footer">Developed by - Omkara Bajpai</div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
